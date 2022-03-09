@@ -1,4 +1,29 @@
 <resources>
     <string name="app_name">Tokopedia Clone</string>
     <string name="send_to">Dikirim ke <b>Kantor Aren Jaya AC Gunung Pati</b></string>
+    <string name="travel"><![CDATA[Travel &\nEntertainment]]></string>
+    <string name="topup"><![CDATA[Topup & \nTagihan]]></string>
+    <string name="handphone_n_tablet"><![CDATA[Handphone \n& Tablet]]></string>
+    <string name="search">Kolom Pencarian</string>
+    <string name="enveloper">enveloper</string>
+    <string name="notification">notification</string>
+    <string name="chart">chart</string>
+    <string name="menu">menu</string>
+    <string name="arrow_down">arrow down</string>
+    <string name="rp">Rp.0</string>
+    <string name="coin">0 Coin</string>
+    <string name="level_member">Gold Member</string>
+    <string name="kupon">0 Kupon</string>
+    <string name="os">Official \nStore</string>
+    <string name="view_all">Lihat Semua</string>
+    <string name="daily">Kebutuhan \nHarian</string>
+    <string name="money">Keuangan</string>
+    <string name="fashion">Fashion \nPria</string>
+    <string name="party">Perlengkapan \nPesta</string>
+    <string name="bazzar">Bazar Hari \nIni</string>
+    <string name="live_nshopping">Live \nShopping</string>
+    <string name="tokopedia_nseru">Tokopedia \nSeru</string>
+    <string name="bangga_nlokal">Bangga \nLokal</string>
+    <string name="bayar_ndi_tempat">Bayar \ndi Tempat</string>
+    <string name="tv_video">Video menarik untukmu</string>
 </resources>
