@@ -20,9 +20,12 @@
         <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/drawable/search.xml" value="0.1" />
         <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/drawable/timer.xml" value="0.1" />
         <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/drawable/transparent_background.xml" value="0.1" />
-        <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/layout/activity_main.xml" value="0.35276967930029157" />
+        <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/layout/activity_navigation.xml" value="0.18" />
         <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/layout/item_category_first.xml" value="0.1" />
         <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/layout/item_categoty_first.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22" />
+        <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/menu/my_navigation_items.xml" value="0.25" />
       </map>
     </option>
   </component>

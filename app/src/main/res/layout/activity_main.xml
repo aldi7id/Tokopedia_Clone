@@ -898,11 +898,13 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/productdesain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/kejar_header"
         android:background="@color/colorPrimary"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         >
         <HorizontalScrollView
             android:layout_width="wrap_content"
@@ -936,7 +938,7 @@
                 app:layout_constraintTop_toBottomOf="@id/dikon1"
                 />
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/diskon_percent"
+                    android:id="@+id/diskon_percent1"
                     android:layout_marginStart="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -954,9 +956,9 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="@+id/diskon_percent"
-                    app:layout_constraintStart_toEndOf="@+id/diskon_percent"
-                    app:layout_constraintTop_toTopOf="@+id/diskon_percent"
+                    app:layout_constraintBottom_toBottomOf="@+id/diskon_percent1"
+                    app:layout_constraintStart_toEndOf="@+id/diskon_percent1"
+                    app:layout_constraintTop_toTopOf="@+id/diskon_percent1"
                     >
                     <TextView
                         android:layout_width="match_parent"
@@ -967,7 +969,7 @@
                     android:id="@+id/os_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/diskon_percent"
+                    app:layout_constraintTop_toBottomOf="@+id/diskon_percent1"
                     android:padding="5dp"
                     >
                     <ImageView
@@ -1042,27 +1044,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/dikon1"
+                android:id="@+id/dikon2"
                 android:layout_width="132dp"
                 android:layout_height="132dp"
                 android:src="@drawable/product2" />
             <TextView
-                android:id="@+id/harga_product_satu"
+                android:id="@+id/harga_product_dua"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Rp.0"
                 android:padding="5dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dikon1"
+                app:layout_constraintTop_toBottomOf="@id/dikon2"
                 />
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/diskon_percent"
+                android:id="@+id/diskon_percent2"
                 android:layout_marginStart="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/diskon_shape"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/harga_product_satu"
+                app:layout_constraintTop_toBottomOf="@id/harga_product_dua"
                 >
                 <TextView
                     android:padding="3dp"
@@ -1074,9 +1076,9 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent"
-                app:layout_constraintStart_toEndOf="@+id/diskon_percent"
-                app:layout_constraintTop_toTopOf="@+id/diskon_percent"
+                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent2"
+                app:layout_constraintStart_toEndOf="@+id/diskon_percent2"
+                app:layout_constraintTop_toTopOf="@+id/diskon_percent2"
                 >
                 <TextView
                     android:layout_width="match_parent"
@@ -1084,10 +1086,10 @@
                     android:text="Rp.5000"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/os_location"
+                android:id="@+id/os_location2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/diskon_percent"
+                app:layout_constraintTop_toBottomOf="@+id/diskon_percent2"
                 android:padding="5dp"
                 >
                 <ImageView
@@ -1099,9 +1101,9 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/os_location"
-                app:layout_constraintStart_toEndOf="@+id/os_location"
-                app:layout_constraintTop_toTopOf="@+id/os_location"
+                app:layout_constraintBottom_toBottomOf="@+id/os_location2"
+                app:layout_constraintStart_toEndOf="@+id/os_location2"
+                app:layout_constraintTop_toTopOf="@+id/os_location2"
                 >
                 <TextView
                     android:layout_width="match_parent"
@@ -1109,11 +1111,11 @@
                     android:text="Jakarta Barat"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/bebas_ongkir"
+                android:id="@+id/bebas_ongkir2"
                 android:paddingStart="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/os_location"
+                app:layout_constraintTop_toBottomOf="@id/os_location2"
                 >
                 <ImageView
                     android:layout_width="32dp"
@@ -1123,12 +1125,12 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/progress"
+                android:id="@+id/progress2"
                 android:layout_width="120dp"
                 android:layout_height="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/os_location"
-                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir">
+                app:layout_constraintStart_toStartOf="@+id/os_location2"
+                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir2">
 
                 <ProgressBar
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -1141,7 +1143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="5dp"
-                app:layout_constraintTop_toBottomOf="@id/progress">
+                app:layout_constraintTop_toBottomOf="@id/progress2">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1163,7 +1165,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/dikon1"
+                android:id="@+id/dikon3"
                 android:layout_width="132dp"
                 android:layout_height="132dp"
                 android:src="@drawable/product3"
@@ -1171,36 +1173,38 @@
                 tools:layout_editor_absoluteY="0dp" />
 
             <TextView
-                android:id="@+id/harga_product_satu"
+                android:id="@+id/harga_product_tiga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Rp.0"
                 android:padding="5dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dikon1"
+                app:layout_constraintTop_toBottomOf="@id/dikon3"
                 />
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/diskon_percent"
+                android:id="@+id/diskon_percent3"
                 android:layout_marginStart="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/diskon_shape"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/harga_product_satu"
+                app:layout_constraintTop_toBottomOf="@id/harga_product_tiga"
                 >
+
                 <TextView
-                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="26%"
                     android:textColor="#E62828"
-                    android:text="26%"/>
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent"
-                app:layout_constraintStart_toEndOf="@+id/diskon_percent"
-                app:layout_constraintTop_toTopOf="@+id/diskon_percent"
+                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent3"
+                app:layout_constraintStart_toEndOf="@+id/diskon_percent3"
+                app:layout_constraintTop_toTopOf="@+id/diskon_percent3"
                 >
                 <TextView
                     android:layout_width="match_parent"
@@ -1208,10 +1212,10 @@
                     android:text="Rp.5000"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/os_location"
+                android:id="@+id/os_location3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/diskon_percent"
+                app:layout_constraintTop_toBottomOf="@+id/diskon_percent3"
                 android:padding="5dp"
                 >
                 <ImageView
@@ -1223,9 +1227,9 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/os_location"
-                app:layout_constraintStart_toEndOf="@+id/os_location"
-                app:layout_constraintTop_toTopOf="@+id/os_location"
+                app:layout_constraintBottom_toBottomOf="@+id/os_location3"
+                app:layout_constraintStart_toEndOf="@+id/os_location3"
+                app:layout_constraintTop_toTopOf="@+id/os_location3"
                 >
                 <TextView
                     android:layout_width="match_parent"
@@ -1233,11 +1237,11 @@
                     android:text="Jakarta Barat"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/bebas_ongkir"
+                android:id="@+id/bebas_ongkir3"
                 android:paddingStart="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/os_location"
+                app:layout_constraintTop_toBottomOf="@id/os_location3"
                 >
                 <ImageView
                     android:layout_width="32dp"
@@ -1247,12 +1251,12 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/progress"
+                android:id="@+id/progress3"
                 android:layout_width="120dp"
                 android:layout_height="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/os_location"
-                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir">
+                app:layout_constraintStart_toStartOf="@+id/os_location3"
+                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir3">
 
                 <ProgressBar
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -1265,7 +1269,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="5dp"
-                app:layout_constraintTop_toBottomOf="@id/progress">
+                app:layout_constraintTop_toBottomOf="@id/progress3">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1286,27 +1290,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/dikon1"
+                android:id="@+id/dikon4"
                 android:layout_width="132dp"
                 android:layout_height="132dp"
                 android:src="@drawable/product4" />
             <TextView
-                android:id="@+id/harga_product_satu"
+                android:id="@+id/harga_product_empat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Rp.0"
                 android:padding="5dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dikon1"
+                app:layout_constraintTop_toBottomOf="@id/dikon4"
                 />
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/diskon_percent"
+                android:id="@+id/diskon_percent4"
                 android:layout_marginStart="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/diskon_shape"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/harga_product_satu"
+                app:layout_constraintTop_toBottomOf="@id/harga_product_empat"
                 >
                 <TextView
                     android:padding="3dp"
@@ -1318,9 +1322,9 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent"
-                app:layout_constraintStart_toEndOf="@+id/diskon_percent"
-                app:layout_constraintTop_toTopOf="@+id/diskon_percent"
+                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent4"
+                app:layout_constraintStart_toEndOf="@+id/diskon_percent4"
+                app:layout_constraintTop_toTopOf="@+id/diskon_percent4"
                 >
                 <TextView
                     android:layout_width="match_parent"
@@ -1328,10 +1332,10 @@
                     android:text="Rp.5000"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/os_location"
+                android:id="@+id/os_location4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/diskon_percent"
+                app:layout_constraintTop_toBottomOf="@+id/diskon_percent4"
                 android:padding="5dp"
                 >
                 <ImageView
@@ -1343,9 +1347,9 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/os_location"
-                app:layout_constraintStart_toEndOf="@+id/os_location"
-                app:layout_constraintTop_toTopOf="@+id/os_location"
+                app:layout_constraintBottom_toBottomOf="@+id/os_location4"
+                app:layout_constraintStart_toEndOf="@+id/os_location4"
+                app:layout_constraintTop_toTopOf="@+id/os_location4"
                 >
                 <TextView
                     android:layout_width="match_parent"
@@ -1353,11 +1357,11 @@
                     android:text="Jakarta Barat"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/bebas_ongkir"
+                android:id="@+id/bebas_ongkir4"
                 android:paddingStart="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/os_location"
+                app:layout_constraintTop_toBottomOf="@id/os_location4"
                 >
                 <ImageView
                     android:layout_width="32dp"
@@ -1367,12 +1371,12 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/progress"
+                android:id="@+id/progress4"
                 android:layout_width="120dp"
                 android:layout_height="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/os_location"
-                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir">
+                app:layout_constraintStart_toStartOf="@+id/os_location4"
+                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir4">
 
                 <ProgressBar
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -1385,7 +1389,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="5dp"
-                app:layout_constraintTop_toBottomOf="@id/progress">
+                app:layout_constraintTop_toBottomOf="@id/progress4">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1396,5 +1400,11 @@
 </androidx.constraintlayout.widget.ConstraintLayout>
         </HorizontalScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_gravity="bottom"
+            app:menu="@menu/my_navigation_items"
+            app:layout_constraintTop_toBottomOf="@id/productdesain"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+    </ScrollView>

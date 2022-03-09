@@ -27,4 +27,13 @@
     <string name="bayar_ndi_tempat">Bayar \ndi Tempat</string>
     <string name="tv_video">Video menarik untukmu</string>
     <string name="lihat_semua">Lihat Semua</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="official_store">Official Store</string>
+    <string name="feed">Feed</string>
+    <string name="home">Home</string>
 </resources>
