@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@color/colorPrimary_50">
+    <!--Contrain Layout Semua-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -25,8 +26,9 @@
         android:layout_height="40dp"
         android:background="@color/colorPrimary"
         tools:ignore="MissingConstraints">
-
+<!--Search Bar-->
         <EditText
+            android:padding="5dp"
             android:id="@+id/search_bar"
             android:layout_width="200dp"
             android:layout_height="match_parent"
@@ -38,7 +40,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:autofillHints="Pencarian"
             android:inputType="none" />
-
+<!--Kotak Surat-->
         <ImageButton
             android:id="@+id/envelope"
             android:layout_width="wrap_content"
@@ -50,7 +52,7 @@
             app:layout_constraintStart_toEndOf="@+id/search_bar"
             app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="@string/enveloper" />
-
+<!--Notif Kotak Surat-->
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +61,7 @@
             app:layout_constraintStart_toEndOf="@id/envelope"
             app:layout_constraintTop_toTopOf="@id/envelope"
             android:contentDescription="@string/notification" />
-
+<!--Notif-->
         <ImageButton
             android:id="@+id/notification"
             android:layout_width="wrap_content"
@@ -73,6 +75,7 @@
             app:layout_constraintStart_toEndOf="@+id/envelope"
             app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="@string/notification" />
+<!--Notif Notif-->
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,7 +84,7 @@
             app:layout_constraintStart_toEndOf="@id/notification"
             app:layout_constraintTop_toTopOf="@id/notification"
             android:contentDescription="@string/notification" />
-
+<!--Chart Shopping-->
         <ImageButton
             android:id="@+id/chart_shopping"
             android:layout_width="wrap_content"
@@ -93,6 +96,7 @@
             app:layout_constraintEnd_toStartOf="@+id/menu"
             app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="@string/chart" />
+<!--Notif Chart Shopping-->
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,6 +105,7 @@
             app:layout_constraintStart_toEndOf="@id/chart_shopping"
             app:layout_constraintTop_toTopOf="@id/chart_shopping"
             android:contentDescription="@string/notification" />
+<!--Menu-->
         <ImageButton
             android:id="@+id/menu"
             android:layout_width="wrap_content"
@@ -113,6 +118,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginRight="10dp"
             android:contentDescription="@string/menu" />
+<!--Notif Menu-->
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,14 +127,6 @@
             app:layout_constraintStart_toEndOf="@id/menu"
             app:layout_constraintTop_toTopOf="@id/menu"
             android:contentDescription="@string/notification" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="20dp" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
     <!--Dikirim Ke-->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -267,6 +265,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/member"
         android:scrollbars="none"
+        android:layout_marginTop="10dp"
         >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/list_category1"
@@ -567,6 +566,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hz1"
+        android:layout_marginTop="10dp"
         android:scrollbars="none">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/coursel"
@@ -614,7 +614,7 @@
         app:layout_constraintTop_toBottomOf="@id/hz2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -793,6 +793,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             android:text="@string/tv_video"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -803,13 +805,15 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="10dp"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lihat_semua_lagi"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/lihat_semua"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -959,6 +963,8 @@
         android:id="@+id/tv_kejar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:text="@string/kejar_diskon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -1011,8 +1017,9 @@
                 android:id="@+id/look_all"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:textColor="@color/colorPrimary"
                 android:text="@string/lihat_semua"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 />
 
@@ -1076,6 +1083,8 @@
                                 tools:ignore="TooDeepLayout" />
                             <TextView
                                 android:id="@+id/harga_product_satu"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/harga_product_pertama"
@@ -1113,6 +1122,7 @@
                                     app:layout_constraintTop_toTopOf="parent"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
                                     android:text="@string/harga_asli_product_pertama"/>
                             </androidx.constraintlayout.widget.ConstraintLayout>
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -1159,6 +1169,7 @@
                                     android:layout_width="32dp"
                                     android:layout_height="16dp"
                                     android:src="@drawable/bebas_ongkir"
+                                    android:layout_marginStart="5dp"
                                     />
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -1188,6 +1199,7 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
                                     android:text="@string/segera_habis"/>
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -1223,6 +1235,8 @@
                                     android:src="@drawable/product2" />
                                 <TextView
                                     android:id="@+id/harga_product_dua"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="@string/harga_product_dua"
@@ -1260,6 +1274,7 @@
                                         app:layout_constraintTop_toTopOf="parent"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
                                         android:text="@string/harga_asli_product_dua"/>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -1304,6 +1319,7 @@
                                         android:layout_width="32dp"
                                         android:layout_height="16dp"
                                         android:src="@drawable/bebas_ongkir"
+                                        android:layout_marginStart="5dp"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
                                         />
@@ -1335,6 +1351,7 @@
                                         app:layout_constraintTop_toTopOf="parent"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
                                         android:text="@string/segera_habis"/>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -1373,6 +1390,8 @@
 
                                 <TextView
                                     android:id="@+id/harga_product_tiga"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="@string/harga_product_tiga"
@@ -1410,6 +1429,7 @@
                                         app:layout_constraintTop_toTopOf="parent"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
                                         android:text="@string/harga_asli_product_tiga"/>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -1454,6 +1474,7 @@
                                         android:layout_width="32dp"
                                         android:layout_height="16dp"
                                         android:src="@drawable/bebas_ongkir"
+                                        android:layout_marginStart="5dp"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
                                         />
@@ -1484,6 +1505,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="@string/segera_habis"
+                                        android:layout_marginStart="5dp"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
                                         />
@@ -1520,6 +1542,8 @@
                                     android:src="@drawable/product4" />
                                 <TextView
                                     android:id="@+id/harga_product_empat"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="@string/harga_product_empat"
@@ -1557,6 +1581,7 @@
                                         app:layout_constraintTop_toTopOf="parent"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
                                         android:text="@string/harga_asli_product_empat"/>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -1603,6 +1628,7 @@
                                         android:layout_width="32dp"
                                         android:layout_height="16dp"
                                         android:src="@drawable/bebas_ongkir"
+                                        android:layout_marginStart="5dp"
                                         />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -1632,6 +1658,7 @@
                                         app:layout_constraintTop_toTopOf="parent"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
                                         android:text="@string/segera_habis"/>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -1640,545 +1667,6 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </HorizontalScrollView>
-<!--
-         <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            >
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="20dp">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/parent_product"
-        >
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/cv_product_satu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            >
-    <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="5dp"
-            android:padding="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            >
-        <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/dikon1"
-                android:layout_width="132dp"
-                android:layout_height="132dp"
-                android:src="@drawable/product1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
-            <TextView
-                android:id="@+id/harga_product_satu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rp.0"
-                android:padding="5dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dikon1"
-                />
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/diskon_percent1"
-                    android:layout_marginStart="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/diskon_shape"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/harga_product_satu"
-                    >
-                    <TextView
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:padding="3dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="#E62828"
-                        android:text="26%"/>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="@+id/diskon_percent1"
-                    app:layout_constraintStart_toEndOf="@+id/diskon_percent1"
-                    app:layout_constraintTop_toTopOf="@+id/diskon_percent1"
-                    >
-                    <TextView
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Rp.5000"/>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/os_location"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/diskon_percent1"
-                    android:padding="5dp"
-                    >
-                    <ImageView
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:src="@drawable/official_store"/>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="@+id/os_location"
-                    app:layout_constraintStart_toEndOf="@+id/os_location"
-                    app:layout_constraintTop_toTopOf="@+id/os_location"
-                    >
-                    <TextView
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Jakarta Barat"/>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    app:layout_constraintStart_toStartOf="parent"
-    android:id="@+id/bebas_ongkir"
-    android:paddingStart="5dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/os_location"
-    >
-    <ImageView
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="32dp"
-        android:layout_height="16dp"
-        android:src="@drawable/bebas_ongkir"
-        />
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/progress"
-                    android:layout_width="120dp"
-                    android:layout_height="12dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/os_location"
-                    app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir">
-
-                    <ProgressBar
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:progress="80"
-                        />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="5dp"
-                    app:layout_constraintTop_toBottomOf="@id/progress">
-                    <TextView
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Segera Habis"/>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/cv_product_dua"
-            app:layout_constraintStart_toEndOf="@id/cv_product_satu"
-            android:layout_margin="10dp">
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp"
-        android:padding="10dp"
-        >
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/dikon2"
-                android:layout_width="132dp"
-                android:layout_height="132dp"
-                android:src="@drawable/product2" />
-            <TextView
-                android:id="@+id/harga_product_dua"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rp.0"
-                android:padding="5dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dikon2"
-                />
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/diskon_percent2"
-                android:layout_marginStart="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/diskon_shape"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/harga_product_dua"
-                >
-                <TextView
-                    android:padding="3dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#E62828"
-                    android:text="26%"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent2"
-                app:layout_constraintStart_toEndOf="@+id/diskon_percent2"
-                app:layout_constraintTop_toTopOf="@+id/diskon_percent2"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Rp.5000"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/os_location2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/diskon_percent2"
-                android:padding="5dp"
-                >
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:src="@drawable/official_store"/>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/os_location2"
-                app:layout_constraintStart_toEndOf="@+id/os_location2"
-                app:layout_constraintTop_toTopOf="@+id/os_location2"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jakarta Barat"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/bebas_ongkir2"
-                android:paddingStart="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/os_location2"
-                >
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="16dp"
-                    android:src="@drawable/bebas_ongkir"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/progress2"
-                android:layout_width="120dp"
-                android:layout_height="12dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/os_location2"
-                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir2">
-
-                <ProgressBar
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:progress="80"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="5dp"
-                app:layout_constraintTop_toBottomOf="@id/progress2">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Segera Habis"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_product_tiga"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/cv_product_dua"
-        app:cardCornerRadius="5dp"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        >
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/dikon3"
-                android:layout_width="132dp"
-                android:layout_height="132dp"
-                android:src="@drawable/product3"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp" />
-
-            <TextView
-                android:id="@+id/harga_product_tiga"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rp.0"
-                android:padding="5dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dikon3"
-                />
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/diskon_percent3"
-                android:layout_marginStart="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/diskon_shape"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/harga_product_tiga"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="3dp"
-                    android:text="26%"
-                    android:textColor="#E62828"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent3"
-                app:layout_constraintStart_toEndOf="@+id/diskon_percent3"
-                app:layout_constraintTop_toTopOf="@+id/diskon_percent3"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Rp.5000"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/os_location3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/diskon_percent3"
-                android:padding="5dp"
-                >
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:src="@drawable/official_store"/>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/os_location3"
-                app:layout_constraintStart_toEndOf="@+id/os_location3"
-                app:layout_constraintTop_toTopOf="@+id/os_location3"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jakarta Barat"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/bebas_ongkir3"
-                android:paddingStart="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/os_location3"
-                >
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="16dp"
-                    android:src="@drawable/bebas_ongkir"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/progress3"
-                android:layout_width="120dp"
-                android:layout_height="12dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/os_location3"
-                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir3">
-
-                <ProgressBar
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:progress="80"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="5dp"
-                app:layout_constraintTop_toBottomOf="@id/progress3">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Segera Habis"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_product_empat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/cv_product_tiga"
-        app:cardCornerRadius="5dp"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        >
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/dikon4"
-                android:layout_width="132dp"
-                android:layout_height="132dp"
-                android:src="@drawable/product4" />
-            <TextView
-                android:id="@+id/harga_product_empat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rp.0"
-                android:padding="5dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dikon4"
-                />
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/diskon_percent4"
-                android:layout_marginStart="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/diskon_shape"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/harga_product_empat"
-                >
-                <TextView
-                    android:padding="3dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#E62828"
-                    android:text="26%"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/diskon_percent4"
-                app:layout_constraintStart_toEndOf="@+id/diskon_percent4"
-                app:layout_constraintTop_toTopOf="@+id/diskon_percent4"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Rp.5000"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/os_location4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/diskon_percent4"
-                android:padding="5dp"
-                >
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:src="@drawable/official_store"/>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/os_location4"
-                app:layout_constraintStart_toEndOf="@+id/os_location4"
-                app:layout_constraintTop_toTopOf="@+id/os_location4"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jakarta Barat"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/bebas_ongkir4"
-                android:paddingStart="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/os_location4"
-                >
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="16dp"
-                    android:src="@drawable/bebas_ongkir"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/progress4"
-                android:layout_width="120dp"
-                android:layout_height="12dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/os_location4"
-                app:layout_constraintTop_toBottomOf="@+id/bebas_ongkir4">
-
-                <ProgressBar
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:progress="80"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="5dp"
-                app:layout_constraintTop_toBottomOf="@id/progress4">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Segera Habis"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
-        </HorizontalScrollView>
-
-        -->
     </androidx.constraintlayout.widget.ConstraintLayout>
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
