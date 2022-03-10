@@ -804,7 +804,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/live"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         app:layout_constraintTop_toTopOf="parent"
         >
         <TextView
