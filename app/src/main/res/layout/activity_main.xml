@@ -14,7 +14,8 @@
         android:layout_gravity="bottom"
         app:menu="@menu/my_navigation_items"
         app:layout_constraintBottom_toBottomOf="parent"
-
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="labeled"
         />
 
     <ScrollView
