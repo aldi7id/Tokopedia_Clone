@@ -27,11 +27,30 @@
         <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/layout/item_categoty_first.xml" value="0.1" />
         <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22" />
         <entry key="..\:/Users/Anonymous/Documents/TokopediaClone/app/src/main/res/menu/my_navigation_items.xml" value="0.25" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/arrow_down.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/backround_menu_atas.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/diskon_shape.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_asset_gold.xml" value="0.1" />
         <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
         <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_envelope.xml" value="0.1" />
         <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_feed.xml" value="0.1" />
-        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/layout/activity_main.xml" value="0.19092627599243855" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_official.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_transaksi.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/ic_wishlist.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/live_shape.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/notif_red.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/notification_red_second.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/payment.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/search.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/drawable/transparent_background.xml" value="0.1" />
+        <entry key="..\:/Users/Anonymous/Documents/Tokopedia_Clone/app/src/main/res/layout/activity_main.xml" value="0.21" />
       </map>
     </option>
   </component>
